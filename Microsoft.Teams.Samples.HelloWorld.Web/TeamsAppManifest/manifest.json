@@ -1,14 +1,14 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
     "manifestVersion": "1.5",
-    "version": "1.0",
+    "version": "1.0.1",
     "id": "a0d3e937-556a-4c0e-9460-d4ea7ac7d395",
     "packageName": "com.microsoft.teams.samples.helloworld.dotnetcore",
     "developer": {
         "name": "zengande",
-        "websiteUrl": "https://0c5243b5.ngrok.io",
-        "privacyUrl": "https://0c5243b5.ngrok.io/privacy",
-        "termsOfUseUrl": "https://0c5243b5.ngrok.io/termsofuse"
+        "websiteUrl": "https://85951a4b.ngrok.io",
+        "privacyUrl": "https://85951a4b.ngrok.io/privacy",
+        "termsOfUseUrl": "https://85951a4b.ngrok.io/termsofuse"
     },
     "icons": {
         "color": "icon-color.png",
@@ -27,7 +27,7 @@
         {
             "entityId": "com.contoso.helloworld.hellotab",
             "name": "Hello Tab",
-            "contentUrl": "https://0c5243b5.ngrok.io/hello",
+            "contentUrl": "https://85951a4b.ngrok.io/hello",
             "scopes": [
                 "personal"
             ]
@@ -77,6 +77,6 @@
         "messageTeamMembers"
     ],
     "validDomains": [
-        "0c5243b5.ngrok.io"
+        "85951a4b.ngrok.io"
     ]
 }
