@@ -1,0 +1,82 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0",
+    "id": "a0d3e937-556a-4c0e-9460-d4ea7ac7d395",
+    "packageName": "com.microsoft.teams.samples.helloworld.dotnetcore",
+    "developer": {
+        "name": "zengande",
+        "websiteUrl": "https://0c5243b5.ngrok.io",
+        "privacyUrl": "https://0c5243b5.ngrok.io/privacy",
+        "termsOfUseUrl": "https://0c5243b5.ngrok.io/termsofuse"
+    },
+    "icons": {
+        "color": "icon-color.png",
+        "outline": "icon-outline.png"
+    },
+    "name": {
+        "short": "Hello Teams",
+        "full": "Microsoft Teams Hello World"
+    },
+    "description": {
+        "short": "Microsoft Teams V4 Search Messaging Extension Bot and settings",
+        "full": "Sample Search Messaging Extension Bot using V4 Bot Builder SDK and V4 Microsoft Teams Extension SDK"
+    },
+    "accentColor": "#abcdef",
+    "staticTabs": [
+        {
+            "entityId": "com.contoso.helloworld.hellotab",
+            "name": "Hello Tab",
+            "contentUrl": "https://0c5243b5.ngrok.io/hello",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "88915440-ca2d-4dec-9965-f17f0c39054c",
+            "scopes": [
+                "personal",
+                "team"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [
+        {
+            "botId": "88915440-ca2d-4dec-9965-f17f0c39054c",
+            "canUpdateConfiguration": true,
+            "commands": [
+                {
+                    "id": "searchQuery",
+                    "type": "query",
+                    "title": "Search",
+                    "description": "Test command to run query",
+                    "initialRun": false,
+                    "fetchTask": false,
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "searchQuery",
+                            "title": "Search Query",
+                            "description": "Your search query",
+                            "inputType": "text"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "0c5243b5.ngrok.io"
+    ]
+}
