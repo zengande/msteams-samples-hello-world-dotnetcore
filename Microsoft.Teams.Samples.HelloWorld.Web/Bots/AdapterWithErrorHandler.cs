@@ -14,6 +14,8 @@ namespace Microsoft.Teams.Samples.HelloWorld.Web
         public AdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger)
             : base(configuration, logger)
         {
+            
+
             OnTurnError = async (turnContext, exception) =>
             {
                 // Log any leaked exception from the application.

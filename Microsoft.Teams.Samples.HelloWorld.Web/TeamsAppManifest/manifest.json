@@ -1,14 +1,14 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
     "manifestVersion": "1.5",
-    "version": "1.0.1",
+    "version": "1.0.202004151549",
     "id": "a0d3e937-556a-4c0e-9460-d4ea7ac7d395",
     "packageName": "com.microsoft.teams.samples.helloworld.dotnetcore",
     "developer": {
         "name": "zengande",
-        "websiteUrl": "https://85951a4b.ngrok.io",
-        "privacyUrl": "https://85951a4b.ngrok.io/privacy",
-        "termsOfUseUrl": "https://85951a4b.ngrok.io/termsofuse"
+        "websiteUrl": "https://241bc913.ngrok.io",
+        "privacyUrl": "https://241bc913.ngrok.io/privacy",
+        "termsOfUseUrl": "https://241bc913.ngrok.io/termsofuse"
     },
     "icons": {
         "color": "icon-color.png",
@@ -23,11 +23,18 @@
         "full": "Sample Search Messaging Extension Bot using V4 Bot Builder SDK and V4 Microsoft Teams Extension SDK"
     },
     "accentColor": "#abcdef",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://241bc913.ngrok.io/config?team={teamId}&channel={channelId}&{locale}",
+            "scopes": [ "team" ],
+            "canUpdateConfiguration": true
+        }
+    ],
     "staticTabs": [
         {
             "entityId": "com.contoso.helloworld.hellotab",
             "name": "Hello Tab",
-            "contentUrl": "https://85951a4b.ngrok.io/hello",
+            "contentUrl": "https://241bc913.ngrok.io/hello",
             "scopes": [
                 "personal"
             ]
@@ -77,6 +84,6 @@
         "messageTeamMembers"
     ],
     "validDomains": [
-        "85951a4b.ngrok.io"
+        "241bc913.ngrok.io"
     ]
 }

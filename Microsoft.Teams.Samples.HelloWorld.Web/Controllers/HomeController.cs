@@ -19,7 +19,14 @@ namespace Microsoft.Teams.Samples.HelloWorld.Web.Controllers
         }
 
         [Route("hello")]
-        public IActionResult Index()
+        public IActionResult Index(string name)
+        {
+            ViewBag.Name = name;
+            return View();
+        }
+
+        [Route("config")]
+        public IActionResult Config()
         {
             return View();
         }
